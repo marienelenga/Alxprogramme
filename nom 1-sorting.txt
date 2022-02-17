@@ -1,0 +1,16 @@
+var s:integer
+var r:integer
+var n:integer
+Start Algo
+read
+
+s=0
+
+while(n!=0) do
+{
+r=n-10*int(n/10)
+n=integer(n/10)
+s=s+r*r
+}
+Display("sum is %s",s)
+End ALGO
