@@ -1,0 +1,26 @@
+USED_FUNCTIONS
+VARIABLES
+ N IS_OF_TYPE NUMBER
+ I IS_OF_TYPE NUMBER
+ S IS_OF_TYPE NUMBER
+ START_ALGORITHM
+ //Initialization of variable S.
+ S TAKE_THE_VALUE 0
+//First entry of the value of variable N
+ DISPLAY "Enter the value of the non-zero natural integer n."
+ READ N
+ WHILE (N<1 OR N-sol(N)!=0 OR N>500000) DO
+ BEGINNING_WHILE
+ DISPLAY "WARNING! n must be a non-zero natural integer less than or equal to 500,000!"
+ READ N
+ END_WHILE
+ DISPLAY "CALCULATION OF THE SUM OF THE INTEGER FROM 1 TO S"
+ SHOW N
+ FOR I GOING_FROM 1 TO N
+ START_FOR
+ S TAKES_THE_VALUE S+I
+ END_FOR
+//Display of the final result.
+DISPLAY "The amount sought is: "
+DISPLAYS
+END_ALGORITHM
